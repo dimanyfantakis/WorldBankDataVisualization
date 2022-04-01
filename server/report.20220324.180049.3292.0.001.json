@@ -1,0 +1,333 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20220324.180049.3292.0.001.json",
+    "dumpEventTime": "2022-03-24T18:00:49Z",
+    "dumpEventTimeStamp": "1648137649693",
+    "processId": 3292,
+    "cwd": "C:\\Users\\user\\NodeJS\\API\\worldbank\\server",
+    "commandLine": [
+      "C:\\Program Files (x86)\\nodejs\\node.exe",
+      "app.js"
+    ],
+    "nodejsVersion": "v13.6.0",
+    "wordSize": 32,
+    "arch": "ia32",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "13.6.0",
+      "v8": "7.9.317.25-node.26",
+      "uv": "1.34.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "79",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.1",
+      "openssl": "1.1.1d",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v13.6.0/node-v13.6.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v13.6.0/node-v13.6.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v13.6.0/win-x86/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "6.1.7601",
+    "osVersion": "Windows 7 Professional Service Pack 1",
+    "osMachine": "i686",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM)2 Duo CPU     E8500  @ 3.16GHz",
+        "speed": 3166,
+        "user": 9982769,
+        "nice": 0,
+        "sys": 2096762,
+        "idle": 9016639,
+        "irq": 186904
+      },
+      {
+        "model": "Intel(R) Core(TM)2 Duo CPU     E8500  @ 3.16GHz",
+        "speed": 3166,
+        "user": 10115541,
+        "nice": 0,
+        "sys": 2083174,
+        "idle": 8896596,
+        "irq": 171710
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Σύνδεση ασύρματου δικτύου",
+        "internal": false,
+        "mac": "50:3e:aa:2d:27:52",
+        "address": "fe80::a8f0:8cbc:fefc:eca9",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 12
+      },
+      {
+        "name": "Σύνδεση ασύρματου δικτύου",
+        "internal": false,
+        "mac": "50:3e:aa:2d:27:52",
+        "address": "192.168.1.2",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "VMware Network Adapter VMnet1",
+        "internal": false,
+        "mac": "00:50:56:c0:00:01",
+        "address": "fe80::3578:29f6:8670:67d1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 16
+      },
+      {
+        "name": "VMware Network Adapter VMnet1",
+        "internal": false,
+        "mac": "00:50:56:c0:00:01",
+        "address": "192.168.109.1",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "VMware Network Adapter VMnet8",
+        "internal": false,
+        "mac": "00:50:56:c0:00:08",
+        "address": "fe80::d99:ce52:6ee3:de48",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 17
+      },
+      {
+        "name": "VMware Network Adapter VMnet8",
+        "internal": false,
+        "mac": "00:50:56:c0:00:08",
+        "address": "192.168.204.1",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "Pc-Home"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+  ],
+  "javascriptHeap": {
+    "totalMemory": 1098452992,
+    "totalCommittedMemory": 1098452992,
+    "usedMemory": 1087424704,
+    "availableMemory": 9825748,
+    "memoryLimit": 1098645504,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 22804,
+        "used": 22804,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 14155776,
+        "committedMemory": 14155776,
+        "capacity": 7074000,
+        "used": 4584240,
+        "available": 2489760
+      },
+      "old_space": {
+        "memorySize": 993619968,
+        "committedMemory": 993619968,
+        "capacity": 993061816,
+        "used": 992992340,
+        "available": 69476
+      },
+      "code_space": {
+        "memorySize": 430080,
+        "committedMemory": 430080,
+        "capacity": 213248,
+        "used": 213248,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 528384,
+        "committedMemory": 528384,
+        "capacity": 211400,
+        "used": 211400,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 89407488,
+        "committedMemory": 89407488,
+        "capacity": 89398944,
+        "used": 89398944,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 1728,
+        "used": 1728,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 7074000,
+        "used": 0,
+        "available": 7074000
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 74.552,
+    "kernelCpuSeconds": 0.982,
+    "cpuConsumptionPercent": 130.231,
+    "maxRss": 1218101248,
+    "pageFaults": {
+      "IORequired": 441317,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 233,
+      "writes": 1
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\user\\AppData\\Roaming",
+    "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_1040_OSKZHEPLVORJRMBO",
+    "COLORTERM": "truecolor",
+    "CommonProgramFiles": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "PC-HOME",
+    "ComSpec": "C:\\Windows\\system32\\cmd.exe",
+    "FP_NO_HOST_CHECK": "NO",
+    "GIT_ASKPASS": "c:\\Users\\user\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\user",
+    "LANG": "en_US.UTF-8",
+    "LOCALAPPDATA": "C:\\Users\\user\\AppData\\Local",
+    "LOGONSERVER": "\\\\PC-HOME",
+    "NUMBER_OF_PROCESSORS": "2",
+    "OneDrive": "C:\\Users\\user\\OneDrive",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
+    "OS": "Windows_NT",
+    "Path": "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\QT Lite\\QTSystem;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\nodejs\\;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Python\\Python38\\Scripts\\;C:\\Python\\Python38\\;C:\\Program Files\\Java\\jdk-13.0.2\\bin;C:\\Program Files\\PyCharm Community Edition 2020.3.3\\bin;;C:\\Users\\user\\AppData\\Roaming\\npm;C:\\Users\\user\\AppData\\Local\\Programs\\Microsoft VS Code\\bin",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+    "PROCESSOR_ARCHITECTURE": "x86",
+    "PROCESSOR_ARCHITEW6432": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 23 Stepping 10, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "170a",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files (x86)",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PSModulePath": "C:\\Users\\user\\Documents\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\",
+    "PUBLIC": "C:\\Users\\Public",
+    "PyCharm Community Edition": "C:\\Program Files\\PyCharm Community Edition 2020.3.3\\bin;",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\Windows",
+    "TEMP": "C:\\Users\\user\\AppData\\Local\\Temp",
+    "TERM_PROGRAM": "vscode",
+    "TERM_PROGRAM_VERSION": "1.65.2",
+    "TMP": "C:\\Users\\user\\AppData\\Local\\Temp",
+    "USERDOMAIN": "Pc-Home",
+    "USERNAME": "user",
+    "USERPROFILE": "C:\\Users\\user",
+    "VS160COMCOMNTOOLS": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\Tools\\",
+    "VSCODE_GIT_ASKPASS_EXTRA_ARGS": "--ms-enable-electron-run-as-node",
+    "VSCODE_GIT_ASKPASS_MAIN": "c:\\Users\\user\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js",
+    "VSCODE_GIT_ASKPASS_NODE": "C:\\Users\\user\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+    "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-46abd15a4b-sock",
+    "windir": "C:\\Windows",
+    "windows_tracing_flags": "3",
+    "windows_tracing_logfile": "C:\\BVTBin\\Tests\\installpackage\\csilogfile.log"
+  },
+  "sharedObjects": [
+    "C:\\Program Files (x86)\\nodejs\\node.exe",
+    "C:\\Windows\\SysWOW64\\ntdll.dll",
+    "C:\\Windows\\syswow64\\kernel32.dll",
+    "C:\\Windows\\syswow64\\KERNELBASE.dll",
+    "C:\\Windows\\system32\\dbghelp.dll",
+    "C:\\Windows\\syswow64\\msvcrt.dll",
+    "C:\\Windows\\syswow64\\WS2_32.dll",
+    "C:\\Windows\\syswow64\\RPCRT4.dll",
+    "C:\\Windows\\syswow64\\SspiCli.dll",
+    "C:\\Windows\\syswow64\\CRYPTBASE.dll",
+    "C:\\Windows\\SysWOW64\\sechost.dll",
+    "C:\\Windows\\syswow64\\NSI.dll",
+    "C:\\Windows\\system32\\IPHLPAPI.DLL",
+    "C:\\Windows\\system32\\WINNSI.DLL",
+    "C:\\Windows\\syswow64\\PSAPI.DLL",
+    "C:\\Windows\\syswow64\\USERENV.dll",
+    "C:\\Windows\\syswow64\\profapi.dll",
+    "C:\\Windows\\syswow64\\ADVAPI32.dll",
+    "C:\\Windows\\syswow64\\USER32.dll",
+    "C:\\Windows\\syswow64\\GDI32.dll",
+    "C:\\Windows\\syswow64\\LPK.dll",
+    "C:\\Windows\\syswow64\\USP10.dll",
+    "C:\\Windows\\syswow64\\CRYPT32.dll",
+    "C:\\Windows\\syswow64\\MSASN1.dll",
+    "C:\\Windows\\system32\\bcrypt.dll",
+    "C:\\Windows\\system32\\WINMM.dll",
+    "C:\\Windows\\system32\\IMM32.DLL",
+    "C:\\Windows\\syswow64\\MSCTF.dll",
+    "C:\\Windows\\system32\\api-ms-win-core-synch-l1-2-0.DLL",
+    "C:\\Windows\\system32\\powrprof.dll",
+    "C:\\Windows\\syswow64\\SETUPAPI.dll",
+    "C:\\Windows\\syswow64\\CFGMGR32.dll",
+    "C:\\Windows\\syswow64\\OLEAUT32.dll",
+    "C:\\Windows\\syswow64\\ole32.dll",
+    "C:\\Windows\\syswow64\\DEVOBJ.dll",
+    "C:\\Windows\\system32\\uxtheme.dll",
+    "C:\\Windows\\system32\\mswsock.dll",
+    "C:\\Windows\\System32\\wshtcpip.dll",
+    "C:\\Windows\\System32\\wship6.dll",
+    "C:\\Windows\\SysWOW64\\bcryptprimitives.dll",
+    "C:\\Windows\\system32\\dhcpcsvc.DLL",
+    "C:\\Windows\\system32\\dhcpcsvc6.DLL",
+    "C:\\Windows\\system32\\DNSAPI.dll",
+    "C:\\Windows\\system32\\rasadhlp.dll",
+    "C:\\Windows\\System32\\fwpuclnt.dll",
+    "C:\\Windows\\system32\\NLAapi.dll",
+    "C:\\Windows\\system32\\napinsp.dll",
+    "C:\\Windows\\system32\\pnrpnsp.dll",
+    "C:\\Windows\\System32\\winrnr.dll"
+  ]
+}

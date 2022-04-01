@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #330175;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #330175;
+}
+.content {
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 20px;
+}
+
+.home {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home .homePageImg {
+  margin-top: 20px;
+}
+
+.not_found {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* chart */
+.chart .form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.chart .form label {
+  text-align: left;
+  display: block;
+}
+.chart .form h2 {
+  font-size: 20px;
+  color: #330175;
+  margin-bottom: 30px;
+}
+.chart .form select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.chart .form button {
+  background: #330175;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.chart .barChart {
+  max-width: 1000px;
+}
+.chart .form .slider {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
