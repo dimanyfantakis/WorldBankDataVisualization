@@ -8,12 +8,11 @@ def main():
         connection = mysql.connector.connect(
             host="127.0.0.1",
             user="root",
-            passwd="mysqlpassword",
-            database="worldbankdb"
+            passwd="mysqlpassword"
             )
         cursor = connection.cursor()
-        '''cursor.execute('CREATE DATABASE worldbankdb;')
-        cursor.execute('USE worldbankdb;')'''
+        cursor.execute('CREATE DATABASE worldbankdb;')
+        cursor.execute('USE worldbankdb;')
 
         with open('C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\measurements.csv') as measurements_file:
             measurements_reader = csv.reader(measurements_file, delimiter=',', quotechar='"')
@@ -35,10 +34,10 @@ def main():
         create_table_years = 'CREATE TABLE years (year_id TINYINT PRIMARY KEY, year SMALLINT,' \
                              ' lustrum TINYINT, decade TINYINT, vicennial TINYINT) ENGINE=INNODB;'
 
-        # cursor.execute(create_table_countries)
-        '''cursor.execute(create_table_years)
+        cursor.execute(create_table_countries)
+        cursor.execute(create_table_years)
         cursor.execute(create_table_measurements)
-        connection.commit()'''
+        connection.commit()
 
         load_countries_table = """LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/countries.csv' 
         INTO TABLE countries
@@ -64,10 +63,10 @@ def main():
             load_measurements_table += """, """ + c[:63]
         load_measurements_table += """);"""
 
-        '''cursor.execute(load_countries_table)
+        cursor.execute(load_countries_table)
         cursor.execute(load_years_table)
         cursor.execute(load_measurements_table)
-        connection.commit()'''
+        connection.commit()
 
         countries_backup = """SELECT *
         INTO OUTFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/countries_backup.csv'
