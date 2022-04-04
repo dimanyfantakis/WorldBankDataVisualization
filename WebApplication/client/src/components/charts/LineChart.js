@@ -18,7 +18,7 @@ const LineChart = ({ chartData, title }) => {
                         bottom: 30
                     },
                     font: {
-                        size: 22
+                        size: 18
                     },
                     color: '#330175'
                 }
