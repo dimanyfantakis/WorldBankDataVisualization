@@ -1,4 +1,4 @@
-# VisualizingData
+# World Bank Data Visualization
 A Web App that visualizes data from Gapminder
 
 ## Description
