@@ -23,14 +23,25 @@ A Web Application developed using a NodeJS backend and a ReactJS frontend that c
 
 ### Usage
 
-* 
-* Install dependencies
+* Navigate to the folder WebApplication of cloned repository via a terminal and run
 ```
 npm install
 ```
-* Run the server
+* Navigate to the folder server of the folder WebApplication and run
+```
+npm install
+```
+* Navigate to the folder client of the folder WebApplication and run
+```
+npm install
+```
+* To run the server navigate to the server folder and run
 ```
 node app.js
+```
+* To run the client navigate to the server folder and run
+```
+npm start
 ```
 
 ## Authors
@@ -42,3 +53,7 @@ Dimitris Anyfantakis
 
 * v.0.0 [2022 April]
     * Tranformation Loading and Backup scripts
+    * Web Application that uses BarCharts/LineCharts/ScatterCharts to visualize data
+    * BarCharts/LineCharts comparing up to 5 countries measurements
+    * Slider to filter the range of years
+    * Group data by 5/10 years
