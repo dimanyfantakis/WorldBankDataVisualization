@@ -53,7 +53,9 @@ Dimitris Anyfantakis
 
 * v.0.0 [2022 April]
     * Tranformation Loading and Backup scripts
-    * Web Application that uses BarCharts/LineCharts/ScatterCharts to visualize data
-    * BarCharts/LineCharts comparing up to 5 countries measurements
+    * NodeJS backend to run the dynamic queries
+    * ReactJS frontend to visualize the data
+    * BarChart/LineChart comparing up to 5 countries with the same or different measurement
+    * ScatterChart that compares 2 different measures 
     * Slider to filter the range of years
     * Group data by 5/10 years
