@@ -10,6 +10,7 @@ import YearGroup from "../components/forms/YearGroupField";
 
 const LineChartPage = () => {
     const [measurementXAxis, setMeasurementX] = useState('');
+    const [comparativeMeasurements, setComparativeMeasurements] = useState([]);
     const [country, setCountry] = useState('');
     const [lineChartData, setLineChartData] = useState({});
     const [dataSubmitted, setDataSubmitted] = useState(false);
@@ -40,6 +41,7 @@ const LineChartPage = () => {
     }
     
     const handleSubmit = (e) => {
+        setComparativeMeasurements([measurementXAxis.replace(/_/g, ' ')]);
         e.preventDefault();
         axios.get('http://localhost:3001/getMeasurement', {
             params: {
@@ -75,12 +77,15 @@ const LineChartPage = () => {
     const renderLineChart = () => {
         if (dataSubmitted) {
             return (
-                <LineChart chartData = { lineChartData } title = { measurementXAxis.replace(/_/g, ' ') } />
+                <LineChart chartData = { lineChartData } title = {comparativeMeasurements.join(', ')} />
             );
         }
     }
 
     const handleAdd = (e) => {
+        let comparativeMeasurementsCopy = comparativeMeasurements.slice();
+        comparativeMeasurementsCopy.push(measurementXAxis.replace(/_/g, ' '));
+        setComparativeMeasurements(comparativeMeasurementsCopy);
         setComparisonsCounter(comparisonsCounter + 1);
         if (comparisonsCounter >= 4) {
             return;
@@ -95,15 +100,15 @@ const LineChartPage = () => {
             }
         })
         .then((response) => {
-            let chartDataCopy = lineChartData.datasets.slice();
-            chartDataCopy.push({
+            let lineChartDataCopy = lineChartData.datasets.slice();
+            lineChartDataCopy.push({
                 label: country,
                 data: response.data,
                 backgroundColor: lineColors[comparisonsCounter],
                 borderColor: lineColors[comparisonsCounter],
                 borderWidth: 1
             });
-            const newData = { ...lineChartData, datasets: chartDataCopy};
+            const newData = { ...lineChartData, datasets: lineChartDataCopy};
             setLineChartData(newData);
         })
         .catch(e => {
@@ -137,6 +142,8 @@ const LineChartPage = () => {
                         <div className="form">                
                             <CountrySelectField country={country} countries={countries} setCountry={setCountry}/>
 
+                            <MeasurementSelectField measurement={measurementXAxis} measurements={measurements} axisLabel='Measurement X Axis' setMeasurement={setMeasurementX}/>
+                            
                             <button onClick={() => handleAdd()}>Add Country</button>
                         </div>
                     }
