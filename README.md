@@ -1,9 +1,9 @@
 # World Bank Data Visualization
-A Web App that visualizes data from Gapminder
+A Web Application that visualizes data from [WorldBank](https://data.worldbank.org/)
 
 ## Description
 
-A Web Application developed in Django that connects to a MySQL database populated with data regarding countries measurements from WorldBank and runs dynamic queries to visualize data using ChartJS graphs
+A Web Application developed using a NodeJS backend and a ReactJS frontend that connects to a MySQL database populated with data regarding countries measurements from WorldBank and runs dynamic queries to visualize data
 
 ## Getting Started
 
