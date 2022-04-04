@@ -10,6 +10,7 @@ import YearGroup from "../components/forms/YearGroupField";
 
 const BarChartPage = () => {
     const [measurementXAxis, setMeasurementX] = useState('');
+    const [comparativeMeasurements, setComparativeMeasurements] = useState([]);
     const [country, setCountry] = useState('');
     const [barChartData, setBarChartData] = useState({});
     const [dataSubmitted, setDataSubmitted] = useState(false);
@@ -40,6 +41,7 @@ const BarChartPage = () => {
     }
 
     const handleSubmit = (e) => {
+        setComparativeMeasurements([measurementXAxis.replace(/_/g, ' ')]);
         e.preventDefault();
         axios.get('http://localhost:3001/getMeasurement', {
             params: {
@@ -76,12 +78,15 @@ const BarChartPage = () => {
     const renderBarChart = () => {
         if (dataSubmitted) {
             return (
-                <BarChart chartData={barChartData} title = {measurementXAxis.replace(/_/g, ' ')}/>
+                <BarChart chartData={barChartData} title = {comparativeMeasurements.join(', ')}/>
             );
         }
     }
 
     const handleAdd = (e) => {
+        let comparativeMeasurementsCopy = comparativeMeasurements.slice();
+        comparativeMeasurementsCopy.push(measurementXAxis.replace(/_/g, ' '));
+        setComparativeMeasurements(comparativeMeasurementsCopy);
         setComparisonsCounter(comparisonsCounter + 1);
         if (comparisonsCounter >= 4) {
             return;
@@ -96,15 +101,15 @@ const BarChartPage = () => {
             }
         })
         .then((response) => {
-            let chartDataCopy = barChartData.datasets.slice();
-            chartDataCopy.push({
+            let barChartDataCopy = barChartData.datasets.slice();
+            barChartDataCopy.push({
                 label: country,
                 data: response.data,
                 backgroundColor: barColors[comparisonsCounter],
                 borderColor: "black",
                 borderWidth: 1
             });
-            const newData = { ...barChartData, datasets: chartDataCopy};
+            const newData = { ...barChartData, datasets: barChartDataCopy};
             setBarChartData(newData);
         })
         .catch(e => {
@@ -137,6 +142,8 @@ const BarChartPage = () => {
                 {dataSubmitted && 
                         <div className="form">
                             <CountrySelectField country={country} countries={countries} setCountry={setCountry}/>
+
+                            <MeasurementSelectField measurement={measurementXAxis} measurements={measurements} axisLabel='Measurement X Axis' setMeasurement={setMeasurementX}/>
                             
                             <button onClick={() => handleAdd()}>Add Country</button>
                         </div>
