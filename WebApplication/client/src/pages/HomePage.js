@@ -8,8 +8,8 @@ const Home = () => {
             <div className="homePageImg">
                 <img
                 img src={homePage} alt="cur"
-                height={450}
-                width={700}
+                height={400}
+                width={850}
                 style={{
                     verticalAlign: "center"
                   }}
