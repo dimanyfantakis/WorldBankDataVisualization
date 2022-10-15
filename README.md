@@ -1,57 +1,98 @@
-# World Bank Data Visualization
-A Web Application that visualizes data from [WorldBank](https://data.worldbank.org/)
+<div align="center">
+  <h1>World Bank Data Visualization</h1>
+  <p>
+    A Web Application that visualizes data from WorldBank
+  </p>
+  
+[![Contributors][contributors-shield]][contributors-url]
+[![Commits][commits-shield]][commits-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+
+[**View Demo**][demo-url] · [**Report Bug**][issues-url] · [**Request Feature**][issues-url]
+
+</div>
 
 ## Description
 
-A Web Application developed using a NodeJS backend and a ReactJS frontend that connects to a MySQL database populated with data regarding countries measurements from WorldBank and runs dynamic queries to visualize data
+A Web Application developed using a NodeJS backend and a ReactJS frontend that connects to a MySQL database, populated with data regarding countries' measurements gathered from [WorldBank][worldbank-url], and runs dynamic queries to visualize them using Line Bar and Scatter charts
 
 ## Getting Started
 
+### Data
+
+* [![NumPy][NumPy]][NumPy-url]
+* [![Pandas][Pandas]][Pandas-url]
+
+
+### Database
+
+* [![MySQL][MySQL]][MySQL-url]
 
 ### Backend Server
 
-* [NodeJS](https://nodejs.org/en/)
+* [![Node][Node.js]][Node-url]
+* [![Nodemon][Nodemon]][Nodemon-url]
+* [![Express][Express]][Express-url]
 
 ### Frontend Client
 
-* [ReactJS](https://reactjs.org/)
+* [![React][React]][React-url]
+* [![Axios][Axios]][Axios-url]
 
 ### Charts
-* [ChartJS](https://www.chartjs.org/)
+* [![ChartJS][ChartJS]][ChartJS-url]
 * [React-Vis](https://github.com/uber/react-vis)
 
+### Requirements
+
+_Clone the repository_
+```javascript
+git clone https://github.com/dimanyfantakis/WorldBankDataVisualization.git
+```
+
+### Installation
+
+_Install NPM packages_
+
+1. Navigate to the folder WebApplication of the cloned repository via a terminal and run
+    ```javascript
+    npm install
+    ```
+
+2. Navigate to the folder 'WebApplication/server' and run
+    ```javascript
+    npm install
+    ```
+
+3. Navigate to the folder 'WebApplication/client' and run
+    ```javascript
+    npm install
+    ```
 
 ### Usage
 
-* Navigate to the folder WebApplication of cloned repository via a terminal and run
-```
-npm install
-```
-* Navigate to the folder server of the folder WebApplication and run
-```
-npm install
-```
-* Navigate to the folder client of the folder WebApplication and run
-```
-npm install
-```
-* To run the server navigate to the server folder and run
-```
-node app.js
-```
-* To run the client navigate to the server folder and run
-```
-npm start
-```
+1. To run the server navigate to the 'WebApplication/server' folder and run
+    ```javascript
+    node app.js
+    ```
+
+2. To run the client navigate to the 'WebApplication/client' folder and run
+    ```javascript
+    npm start
+    ```
 
 ## Authors
 
 Dimitris Anyfantakis
 
+## License
+
+See [License][license-url] for more information regarding the license
 
 ## Version History
 
-* v.0.0 [2022 April]
+* v.1.0 [2022 April]
     * Tranformation Loading and Backup scripts
     * NodeJS backend to run the dynamic queries
     * ReactJS frontend to visualize the data
@@ -59,3 +100,33 @@ Dimitris Anyfantakis
     * ScatterChart that compares 2 different measures 
     * Slider to filter the range of years
     * Group data by 5/10 years
+
+
+[contributors-shield]: https://img.shields.io/github/contributors/dimanyfantakis/WorldBankDataVisualization
+[contributors-url]: https://github.com/dimanyfantakis/WorldBankDataVisualization/graphs/contributors
+[commits-shield]: https://img.shields.io/github/last-commit/dimanyfantakis/WorldBankDataVisualization
+[commits-url]: https://github.com/dimanyfantakis/WorldBankDataVisualization/commit/main
+[worldbank-url]: https://data.worldbank.org/
+[license-shield]: https://img.shields.io/github/license/dimanyfantakis/WorldBankDataVisualization
+[license-url]: https://https://github.com/dimanyfantakis/WorldBankDataVisualization/blob/main/LICENSE
+[issues-shield]: https://img.shields.io/github/issues/dimanyfantakis/WorldBankDataVisualization
+[issues-url]: https://github.com/dimanyfantakis/WorldBankDataVisualization/issues/
+[demo-url]: https://github.com/dimanyfantakis/WorldBankDataVisualization
+[NumPy]: https://img.shields.io/badge/NumPy-000000?style=flat&logo=NumPy&logoColor=########013243
+[NumPy-url]: https://numpy.org/
+[Pandas]: https://img.shields.io/badge/pandas-000000?style=flat&logo=pandas&logoColor=#########150458
+[Pandas-url]: https://pandas.pydata.org/
+[MySQL]: https://img.shields.io/badge/MySQL-000000?style=flat&logo=MySQL&logoColor=#######4479A1
+[MySQL-url]: https://www.mysql.com/
+[Node.js]: https://img.shields.io/badge/Node.js-000000?style=flat&logo=Node.js&logoColor=#339933logoColor=white
+[Node-url]: https://nodejs.org/en/
+[Nodemon]: https://img.shields.io/badge/Nodemon-000000?style=flat&logo=Nodemon&logoColor=##76D04B
+[Nodemon-url]: https://www.npmjs.com/package/nodemon
+[Express]: https://img.shields.io/badge/Express-000000?style=flat&logo=Express&logoColor=###000000
+[Express-url]: https://expressjs.com/
+[React]: https://img.shields.io/badge/React-000000?style=flat&logo=React&logoColor=####61DAFB
+[React-url]: https://reactjs.org/
+[Axios]: https://img.shields.io/badge/Axios-000000?style=flat&logo=Axios&logoColor=#####5A29E4
+[Axios-url]: https://axios-http.com/docs/intro
+[ChartJS]: https://img.shields.io/badge/Chart-000000?style=flat&logo=Chart.js&logoColor=######FF6384
+[ChartJS-url]: https://www.chartjs.org/
