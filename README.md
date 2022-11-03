@@ -42,7 +42,7 @@ A Web Application developed using a NodeJS backend and a ReactJS frontend that c
 
 ### Charts
 * [![ChartJS][ChartJS]][ChartJS-url]
-* [React-Vis](https://github.com/uber/react-vis)
+* [React-Vis][React-Vis-url]
 
 ### Requirements
 
@@ -70,7 +70,7 @@ _Install NPM packages_
     npm install
     ```
 
-### Usage
+## Usage
 
 1. To run the server navigate to the 'WebApplication/server' folder and run
     ```javascript
@@ -81,6 +81,21 @@ _Install NPM packages_
     ```javascript
     npm start
     ```
+
+### Screenshots
+
+**_Homepage_**
+
+![HomepageScreenshot][HomepageScreenshot-url]
+
+**_Barchart page_**
+![BarChartScreenshot][BarChartScreenshot-url]
+
+**_Viewing a barchart_**
+![BarChartSingleMeasurementScreenshot][BarChartSingleMeasurementScreenshot-url]
+
+**_Comparing different countries_**
+![BarChartMeasurementComparisonScreenshot][BarChartMeasurementComparisonScreenshot-url]
 
 ## Authors
 
@@ -130,3 +145,8 @@ See [License][license-url] for more information regarding the license
 [Axios-url]: https://axios-http.com/docs/intro
 [ChartJS]: https://img.shields.io/badge/Chart-000000?style=flat&logo=Chart.js&logoColor=######FF6384
 [ChartJS-url]: https://www.chartjs.org/
+[React-Vis-url]: https://github.com/uber/react-vis
+[HomepageScreenshot-url]: https://drive.google.com/uc?export=view&id=1flo9WXFYV-2WpjCwwzy0pmxL7G_qhmGt
+[BarChartScreenshot-url]: https://drive.google.com/uc?export=view&id=11Sq0FNIctJDkrYyIimvSFhCI7h1rI-ff
+[BarChartSingleMeasurementScreenshot-url]: https://drive.google.com/uc?export=view&id=10IETdjVazvJKfQfuAqOzFfUiR_GI4BpZ
+[BarChartMeasurementComparisonScreenshot-url]: https://drive.google.com/uc?export=view&id=1sfsXI-D7K-kZphOO2BIJWkVhG5KuPzNR
