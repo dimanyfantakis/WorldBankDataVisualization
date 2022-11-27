@@ -137,13 +137,14 @@ See [License][license-url] for more information regarding the license
 [issues-shield]: https://img.shields.io/github/issues/dimanyfantakis/WorldBankDataVisualization
 [issues-url]: https://github.com/dimanyfantakis/WorldBankDataVisualization/issues/
 [demo-url]: https://github.com/dimanyfantakis/WorldBankDataVisualization
-[NumPy]: https://img.shields.io/badge/NumPy-000000?style=for-the-badge&logo=NumPy&logoColor=########013243
+
+[NumPy]: https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=NumPy&logoColor=white
 [NumPy-url]: https://numpy.org/
-[Pandas]: https://img.shields.io/badge/pandas-000000?style=for-the-badge&logo=pandas&logoColor=#########150458
+[Pandas]: https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white
 [Pandas-url]: https://pandas.pydata.org/
-[MySQL]: https://img.shields.io/badge/MySQL-000000?style=for-the-badge&logo=MySQL&logoColor=#######4479A1
+[MySQL]: https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white
 [MySQL-url]: https://www.mysql.com/
-[Node.js]: https://img.shields.io/badge/Node.js-000000?style=for-the-badge&logo=Node.js&logoColor=#339933logoColor=white
+[Node.js]: https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=Node.js&logoColor=black
 [Node-url]: https://nodejs.org/en/
 [Nodemon]: https://img.shields.io/badge/Nodemon-000000?style=for-the-badge&logo=Nodemon&logoColor=##76D04B
 [Nodemon-url]: https://www.npmjs.com/package/nodemon
@@ -151,9 +152,9 @@ See [License][license-url] for more information regarding the license
 [Express-url]: https://expressjs.com/
 [React]: https://img.shields.io/badge/React-000000?style=for-the-badge&logo=React&logoColor=####61DAFB
 [React-url]: https://reactjs.org/
-[Axios]: https://img.shields.io/badge/Axios-000000?style=for-the-badge&logo=Axios&logoColor=#####5A29E4
+[Axios]: https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=Axios&logoColor=black
 [Axios-url]: https://axios-http.com/docs/intro
-[ChartJS]: https://img.shields.io/badge/Chart-000000?style=for-the-badge&logo=Chart.js&logoColor=######FF6384
+[ChartJS]: https://img.shields.io/badge/Chart-FF6384?style=for-the-badge&logo=Chart.js&logoColor=black
 [ChartJS-url]: https://www.chartjs.org/
 [React-Vis-url]: https://github.com/uber/react-vis
 [HomepageScreenshot-url]: https://drive.google.com/uc?export=view&id=1flo9WXFYV-2WpjCwwzy0pmxL7G_qhmGt
