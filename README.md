@@ -13,36 +13,42 @@
 
 </div>
 
-## Description
+
+## About
+
+### Description
 
 A Web Application developed using a NodeJS backend and a ReactJS frontend that connects to a MySQL database, populated with data regarding countries' measurements gathered from [WorldBank][worldbank-url], and runs dynamic queries to visualize them using Line Bar and Scatter charts
 
-## Getting Started
+### Tech Stack
 
-### Data
+***Data***
 
 * [![NumPy][NumPy]][NumPy-url]
 * [![Pandas][Pandas]][Pandas-url]
 
-
-### Database
+***Database***
 
 * [![MySQL][MySQL]][MySQL-url]
 
-### Backend Server
+***Backend Server***
 
 * [![Node][Node.js]][Node-url]
 * [![Nodemon][Nodemon]][Nodemon-url]
 * [![Express][Express]][Express-url]
 
-### Frontend Client
+***Frontend Client***
 
 * [![React][React]][React-url]
 * [![Axios][Axios]][Axios-url]
 
-### Charts
+***Charts***
+
 * [![ChartJS][ChartJS]][ChartJS-url]
 * [React-Vis][React-Vis-url]
+
+
+## Getting Started
 
 ### Requirements
 
@@ -70,6 +76,7 @@ _Install NPM packages_
     npm install
     ```
 
+
 ## Usage
 
 1. To run the server navigate to the 'WebApplication/server' folder and run
@@ -84,26 +91,29 @@ _Install NPM packages_
 
 ### Screenshots
 
-**_Homepage_**
+***Homepage***
 
 ![HomepageScreenshot][HomepageScreenshot-url]
 
-**_Barchart page_**
+***Barchart page***
 ![BarChartScreenshot][BarChartScreenshot-url]
 
-**_Viewing a barchart_**
+***Viewing a barchart***
 ![BarChartSingleMeasurementScreenshot][BarChartSingleMeasurementScreenshot-url]
 
-**_Comparing different countries_**
+***Comparing different countries***
 ![BarChartMeasurementComparisonScreenshot][BarChartMeasurementComparisonScreenshot-url]
+
 
 ## Authors
 
 Dimitris Anyfantakis
 
+
 ## License
 
 See [License][license-url] for more information regarding the license
+
 
 ## Version History
 
