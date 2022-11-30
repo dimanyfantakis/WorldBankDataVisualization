@@ -45,7 +45,7 @@ A Web Application developed using a NodeJS backend and a ReactJS frontend that c
 ***Charts***
 
 * [![ChartJS][ChartJS]][ChartJS-url]
-* [React-Vis][React-Vis-url]
+* [![ReactVis][ReactVis]][ReactVis-url]
 
 
 ## Getting Started
@@ -156,7 +156,9 @@ See [License][license-url] for more information regarding the license
 [Axios-url]: https://axios-http.com/docs/intro
 [ChartJS]: https://img.shields.io/badge/Chart-FF6384?style=for-the-badge&logo=Chart.js&logoColor=black
 [ChartJS-url]: https://www.chartjs.org/
-[React-Vis-url]: https://github.com/uber/react-vis
+[ReactVis]: https://img.shields.io/badge/ReactVis-2596be?style=for-the-badge
+[ReactVis-url]: https://github.com/uber/react-vis
+
 [HomepageScreenshot-url]: https://drive.google.com/uc?export=view&id=1flo9WXFYV-2WpjCwwzy0pmxL7G_qhmGt
 [BarChartScreenshot-url]: https://drive.google.com/uc?export=view&id=11Sq0FNIctJDkrYyIimvSFhCI7h1rI-ff
 [BarChartSingleMeasurementScreenshot-url]: https://drive.google.com/uc?export=view&id=10IETdjVazvJKfQfuAqOzFfUiR_GI4BpZ
